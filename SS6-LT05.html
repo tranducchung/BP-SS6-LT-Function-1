@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    let Star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe","Regulus"];
+    let Constellation =["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+   function findStar(x) {
+       let result = "";
+       for (let i = 0; i < Star.length; i++) {
+           if (x === Star[i]) {
+               result = Constellation[i];
+               break;
+           } else {
+               result = "No star found"
+           }
+       }
+       return result
+   }
+    let nameStar = prompt("Enter the star name");
+    let extraVariable = findStar(nameStar);
+    document.write(extraVariable)
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    function main(x,y) {
+        let result = "";
+        let sum = 0;
+        if (x>y){
+              result =  x +" > " + y
+        } else { sum = x+y;
+            result = "Tổng của hai số nhập vào là "+ sum}
+        return result;
+    }
+    let a = parseInt(prompt("Nhập giá trị cho x"));
+    let b = parseInt(prompt("Nhập giá trị cho y"));
+    let c = main(a,b);
+    alert(c)
+</script>
+</body>
+</html>
